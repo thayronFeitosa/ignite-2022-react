@@ -1,13 +1,17 @@
 import { Header } from "./components/Header";
-import './global.css';
+
+import "./global.css";
+import styles from "./App.module.css";
+import { Sidebar } from "./components/Sidebar";
 
 function App() {
   return (
-    <>
-      <header>
-        <Header />
-      </header>
-    </>
+    <div>
+      <Header />
+      <div className={styles.wrapper}>
+        <Sidebar />
+      </div>
+    </div>
   );
 }
 
