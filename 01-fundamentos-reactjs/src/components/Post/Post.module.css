@@ -31,9 +31,9 @@
 }
 
 .post > header {
-    display: flex;
+    display:flex;
     align-items: center;
-    justify-content: flex-between;
+    justify-content: space-between;
 }
 
 .post > header time {

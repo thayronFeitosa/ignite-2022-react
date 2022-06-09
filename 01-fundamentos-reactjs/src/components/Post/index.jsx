@@ -17,9 +17,9 @@ export function Post() {
           </div>
         </div>
 
-        <time tile="03 de junho às 03:27h" dateTime="2022-06-08 03:27:30">
-          Publicado há 1h
-        </time>
+          <time tile="03 de junho às 03:27h" dateTime="2022-06-08 03:27:30">
+            Publicado há 1h
+          </time>
       </header>
 
       <div className={styles.content}>
