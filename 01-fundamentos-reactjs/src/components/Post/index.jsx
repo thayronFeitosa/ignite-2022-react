@@ -1,3 +1,4 @@
+import { Avatar } from "../Avatar";
 import { Comment } from "../Comment";
 import styles from "./Post.module.css";
 
@@ -6,10 +7,7 @@ export function Post() {
     <article className={styles.post}>
       <header>
         <div className={styles.author}>
-          <img
-            className={styles.avatar}
-            src="https://avatars.githubusercontent.com/u/42882103?v=4"
-          />
+          <Avatar src="https://avatars.githubusercontent.com/u/42882103?v=4" />
 
           <div className={styles.authorInfo}>
             <strong>Tharyon Feitosa</strong>
@@ -17,9 +15,9 @@ export function Post() {
           </div>
         </div>
 
-          <time tile="03 de junho às 03:27h" dateTime="2022-06-08 03:27:30">
-            Publicado há 1h
-          </time>
+        <time tile="03 de junho às 03:27h" dateTime="2022-06-08 03:27:30">
+          Publicado há 1h
+        </time>
       </header>
 
       <div className={styles.content}>
