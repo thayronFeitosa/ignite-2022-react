@@ -10,7 +10,7 @@ export function Sidebar() {
         src="https://images.unsplash.com/photo-1605379399642-870262d3d051?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=50"
       />
       <div className={styles.profile}>
-        <Avatar hasBorder={true} src="https://avatars.githubusercontent.com/u/42882103?v=4" />
+        <Avatar hasBorder src="https://avatars.githubusercontent.com/u/42882103?v=4" />
         <strong>Thayron Feitosa</strong>
         <span>Web developer</span>
       </div>
