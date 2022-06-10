@@ -2,14 +2,16 @@ import { ThumbsUp, Trash } from "phosphor-react";
 import { Avatar } from "../Avatar";
 import styles from "./Comment.module.css";
 
-export function Comment() {
+export function Comment({ content }) {
   return (
     <div className={styles.comment}>
-      <Avatar hasBorder={false} src="https://avatars.githubusercontent.com/u/42882103?v=4" />
+      <Avatar
+        hasBorder={false}
+        src="https://avatars.githubusercontent.com/u/42882103?v=4"
+      />
 
       <div className={styles.commentBox}>
         <div className={styles.commentContent}>
-          
           <header className>
             <div className={styles.authorAndTime}>
               <strong>Tharyon Feitosa</strong>
@@ -17,16 +19,17 @@ export function Comment() {
                 Publicado há 1h
               </time>
             </div>
-            <button title="Deletar comentário"><Trash size={20}/></button>
-
+            <button title="Deletar comentário">
+              <Trash size={20} />
+            </button>
           </header>
 
-          <p>Muito bom Devon, parabéns!! 👏👏</p>
+          <p>{content}</p>
         </div>
         <footer>
-            <button>
-                <ThumbsUp size={25}/> Aplaudir <span>20</span>
-            </button>
+          <button>
+            <ThumbsUp size={25} /> Aplaudir <span>20</span>
+          </button>
         </footer>
       </div>
     </div>
