@@ -9,7 +9,7 @@ import { Post } from "./components/Post";
    {
      id: 1,
      author: {
-       baseUrl: "https://avatars.githubusercontent.com/u/42882103?v=4",
+      avatarUrl: "https://avatars.githubusercontent.com/u/42882103?v=4",
        name: 'thayron Feitosa',
        role: ' Desenvolvedor fullStack'
      },
@@ -24,8 +24,8 @@ import { Post } from "./components/Post";
    {
     id: 2,
     author: {
-      baseUrl: "https://avatars.githubusercontent.com/u/42882103?v=4",
-      name: 'thayron Feitosa',
+      avatarUrl: "https://avatars.githubusercontent.com/u/42882103?v=4",
+      name: 'Joao Feitosa',
       role: ' Desenvolvedor fullStack'
     },
     content: [
