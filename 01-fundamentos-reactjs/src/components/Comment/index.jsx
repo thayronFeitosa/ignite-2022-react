@@ -7,13 +7,16 @@ export function Comment({ content, onDeleteComment }) {
   const [lineCount, setLineCount] = useState(0);
 
   function handleDeleteComment() {
-    onDeleteComment(content)
+    onDeleteComment(content);
   }
 
   function handleLikeComment() {
-    setLineCount(lineCount + 1)
+    setLineCount((state) => {
+      return state + 1;
+    });
+    
   }
-  
+
   return (
     <div className={styles.comment}>
       <Avatar
